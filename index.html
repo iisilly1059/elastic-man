@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Waterworks!</title>
-    <!--<script src="https://cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.min.js"></script>-->
-    <script src="waterworks/js/phaser.min.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser-arcade-physics.min.js"></script>   -->
-    <script src="waterworks/js/newgroundsio.min.js"></script>
-    <script src="waterworks/js/main.min.js"></script>
-    <script src="waterworks/js/GameController.min.js"></script>
-    <script src="waterworks/js/Hand.min.js"></script>
-    <script src="waterworks/js/Card.min.js"></script>
-    <script src="waterworks/js/Walker.min.js"></script>
-    <script src="waterworks/js/TownBlock.min.js"></script>
-    <script src="waterworks/js/TownNode.min.js"></script>
-    <script src="waterworks/js/TownPipe.min.js"></script>
-    <script src="waterworks/js/Town.min.js"></script>
-    <script src="waterworks/js/Construction.min.js"></script>
-    <script src="waterworks/js/CardSlot.min.js"></script>
-    <script src="waterworks/js/Button.min.js"></script>
-    <script src="waterworks/js/Drawer.min.js"></script>
-    <script src="waterworks/js/Deck.min.js"></script>
-    <script src="waterworks/js/Popup.min.js"></script>
-    <script src="waterworks/js/Options.min.js"></script>
-    <script src="waterworks/js/MainMenu.min.js"></script>
-    <script src="waterworks/js/AchNotify.min.js"></script>
-    <script src="waterworks/js/GameAnalytics.min.js"></script>
-    <link rel="icon" href="icon.png">
-    <style type="text/css">
-      body {
-        overflow: hidden;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <title>Elastic Man</title>
+    <link rel="stylesheet" href="face.css" type="text/css" />
   </head>
-  <body onLoad="runGame();" style="margin: 0px; background-color: #000000;">
-    <script src="/js/main.js"></script>
-    <div id="waterworks"></div>
+  <body>
+    <script type="text/template" id="loading-template">
+      <div id="loading-bar" class="loading-bar-visible">
+                      <div id="loading-fill"></div>
+                  </div>
+    </script>
+    <script type="text/template" id="no-support-template">
+      <div id="error">Your browser does not support the required features. Try another browser and/or device!</div>
+    </script>
+    <script type="text/template" id="main-template">
+      <div id="quality-container">
+                      <div id="quality-label">Quality</div>
+                      <div class="quality" id="quality-medium">Medium</div>
+                      <div class="quality" id="quality-high">High</div>
+                  </div>
+
+    </script>
+    <div id="placeholder"></div>
+    <script src="2face.js"></script>
   </body>
 </html>
